@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <main>
+        <header>
+            <img src="imagenes/isil+.png" alt="logo" height="50"></img>
+        </header>
+        <h1>Pseudocódigo con estructuras condicionales anidadas</h1>
+            <div id="Caso">
+                <img src="imagenes/caso1.png" alt="caso1">
+            </div>
+            <div id="solucion">
+                <script>
+                    //Declaracion de varialbles
+                    var cant,total,unidad;
+
+                    //Fase de lectura 
+                    cant=parseInt(prompt("Ingrese la cantidad de llantas"));
+
+                    //Fase de procesamiento de datos
+                    if (cant<5) {
+                        total=30000*cant
+                    } else {
+                        if (cant<=10) {
+                            total=25000*cant;
+                        } else {
+                            total=20000*cant;
+                        }
+                    }
+                
+                    if (cant<5) {
+                        unidad=30000;
+                    } else {
+                        if (cant<=10) {
+                            unidad=25000;
+                        } else {
+                            unidad=20000;
+                        }
+                    }
+
+                    //Fase de salida
+                    document.write("Cantidad de llantas: "+cant+"<br>");
+                    document.write("Precio de unidad:$ "+unidad+"<br>");
+                    document.write("Total a pagar:$ "+total);
+
+                </script>
+            </div>
+     </main>
+    
+</body>
+</html>
